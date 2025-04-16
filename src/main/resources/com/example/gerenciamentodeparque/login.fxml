@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.gerenciamentodeparque.LoginController"
+            prefWidth="400" prefHeight="500"
+            style="-fx-background-color: linear-gradient(to bottom, #2c3e50, #3498db);">
+
+    <VBox spacing="15.0" alignment="CENTER" layoutX="50" layoutY="100" prefWidth="300">
+        <Label text="Login" style="-fx-text-fill: white; -fx-font-size: 26px; -fx-font-weight: bold;" />
+
+        <TextField fx:id="txtEmail" promptText="Email"
+                   style="-fx-background-radius: 8; -fx-padding: 8;" />
+
+        <PasswordField fx:id="txtSenha" promptText="Senha"
+                       style="-fx-background-radius: 8; -fx-padding: 8;" />
+
+        <Button fx:id="btnEntrar" text="Entrar"
+                style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-background-radius: 8;"
+                prefWidth="200" />
+
+        <Hyperlink fx:id="linkCadastrar" text="Criar conta"
+                   style="-fx-text-fill: white;" />
+    </VBox>
+</AnchorPane>
+

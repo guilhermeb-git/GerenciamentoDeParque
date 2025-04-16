@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.gerenciamentodeparque.BilheteriaController"
+            prefWidth="600" prefHeight="400">
+
+    <VBox spacing="10" layoutX="20" layoutY="20" prefWidth="560" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20">
+        <Label text="Bilheteiras Disponíveis" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+        <Label fx:id="labelMensagem" textFill="red" style="-fx-font-size: 14px;" />
+
+        <ListView fx:id="listViewBilheterias" prefHeight="300" />
+    </VBox>
+</AnchorPane>
+
+

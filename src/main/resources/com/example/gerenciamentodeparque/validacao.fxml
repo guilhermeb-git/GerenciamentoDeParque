@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.gerenciamentodeparque.ValidacaoController" spacing="10" padding="20">
+    <Label text="Validação de Ingressos" style="-fx-font-size: 20px; font-weight: bold;"/>
+
+    <!-- Campo para inserir o código do ingresso -->
+    <HBox spacing="10">
+        <Label text="Código do Ingresso:"/>
+        <TextField fx:id="codigoIngressoTextField" promptText="Digite o código do ingresso" />
+    </HBox>
+
+    <!-- Botão para validar o ingresso -->
+    <Button text="Validar Ingresso" onAction="#validarIngresso"/>
+
+    <!-- Tabela de ingressos -->
+    <TableView fx:id="tableIngressos" prefHeight="200" prefWidth="400">
+        <columns>
+            <TableColumn fx:id="colCliente" text="Cliente" />
+            <TableColumn fx:id="colAtracao" text="Atração" />
+            <TableColumn fx:id="colDataCompra" text="Data de Compra" />
+            <TableColumn fx:id="colFormaPagamento" text="Forma de Pagamento" />
+        </columns>
+    </TableView>
+
+</VBox>
+
